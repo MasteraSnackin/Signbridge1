@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.signbridge.app">
+    
+    <!-- This is a placeholder manifest for Flutter embedding detection -->
+    <!-- The actual manifest is in android/app/src/main/AndroidManifest.xml -->
+    
+    <application>
+        <meta-data
+            android:name="flutterEmbedding"
+            android:value="2" />
+    </application>
+</manifest>
