@@ -13,11 +13,11 @@
 
 import 'dart:typed_data';
 import 'package:camera/camera.dart';
-import '../core/models/hand_landmarks.dart';
-import '../core/models/point_3d.dart';
-import '../core/services/cactus_model_service.dart';
-import '../core/utils/logger.dart';
-import '../core/utils/performance_monitor.dart';
+import '../../core/models/hand_landmarks.dart';
+import '../../core/models/point_3d.dart';
+import '../../core/services/cactus_model_service.dart';
+import '../../core/utils/logger.dart';
+import '../../core/utils/performance_monitor.dart';
 
 /// Result of hand detection
 class HandDetectionResult {

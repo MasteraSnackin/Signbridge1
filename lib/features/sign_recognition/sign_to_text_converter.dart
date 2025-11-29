@@ -10,9 +10,9 @@
 /// - Context prediction: Optional word completion using language model
 
 import 'dart:async';
-import '../core/models/sign_gesture.dart';
-import '../core/services/cactus_model_service.dart';
-import '../core/utils/logger.dart';
+import '../../core/models/sign_gesture.dart';
+import '../../core/services/cactus_model_service.dart';
+import '../../core/utils/logger.dart';
 
 /// Configuration for sign-to-text conversion
 class SignToTextConfig {
