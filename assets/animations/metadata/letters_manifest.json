@@ -1,0 +1,224 @@
+{
+  "version": "1.0.0",
+  "total_animations": 36,
+  "format": "lottie",
+  "description": "ASL alphabet (A-Z) and numbers (0-9) placeholder animations",
+  "animations": {
+    "A": {
+      "path": "assets/animations/letters/A.json",
+      "duration_ms": 1500,
+      "difficulty": "easy",
+      "description": "Closed fist with thumb on side"
+    },
+    "B": {
+      "path": "assets/animations/letters/B.json",
+      "duration_ms": 1500,
+      "difficulty": "easy",
+      "description": "Flat hand, fingers together, thumb across palm"
+    },
+    "C": {
+      "path": "assets/animations/letters/C.json",
+      "duration_ms": 1500,
+      "difficulty": "easy",
+      "description": "Curved hand forming C shape"
+    },
+    "D": {
+      "path": "assets/animations/letters/D.json",
+      "duration_ms": 1500,
+      "difficulty": "medium",
+      "description": "Index finger up, other fingers touch thumb"
+    },
+    "E": {
+      "path": "assets/animations/letters/E.json",
+      "duration_ms": 1500,
+      "difficulty": "easy",
+      "description": "Fingers curled, thumb across fingertips"
+    },
+    "F": {
+      "path": "assets/animations/letters/F.json",
+      "duration_ms": 1500,
+      "difficulty": "medium",
+      "description": "Index and thumb form circle, other fingers up"
+    },
+    "G": {
+      "path": "assets/animations/letters/G.json",
+      "duration_ms": 1500,
+      "difficulty": "medium",
+      "description": "Index and thumb point sideways"
+    },
+    "H": {
+      "path": "assets/animations/letters/H.json",
+      "duration_ms": 1500,
+      "difficulty": "medium",
+      "description": "Index and middle fingers point sideways"
+    },
+    "I": {
+      "path": "assets/animations/letters/I.json",
+      "duration_ms": 1500,
+      "difficulty": "easy",
+      "description": "Pinky finger up, other fingers closed"
+    },
+    "J": {
+      "path": "assets/animations/letters/J.json",
+      "duration_ms": 1800,
+      "difficulty": "medium",
+      "description": "Pinky finger draws J shape"
+    },
+    "K": {
+      "path": "assets/animations/letters/K.json",
+      "duration_ms": 1500,
+      "difficulty": "hard",
+      "description": "Index and middle up, thumb between them"
+    },
+    "L": {
+      "path": "assets/animations/letters/L.json",
+      "duration_ms": 1500,
+      "difficulty": "easy",
+      "description": "Index and thumb form L shape"
+    },
+    "M": {
+      "path": "assets/animations/letters/M.json",
+      "duration_ms": 1500,
+      "difficulty": "medium",
+      "description": "Three fingers over thumb"
+    },
+    "N": {
+      "path": "assets/animations/letters/N.json",
+      "duration_ms": 1500,
+      "difficulty": "medium",
+      "description": "Two fingers over thumb"
+    },
+    "O": {
+      "path": "assets/animations/letters/O.json",
+      "duration_ms": 1500,
+      "difficulty": "easy",
+      "description": "Fingers form O shape"
+    },
+    "P": {
+      "path": "assets/animations/letters/P.json",
+      "duration_ms": 1500,
+      "difficulty": "hard",
+      "description": "Like K but pointing down"
+    },
+    "Q": {
+      "path": "assets/animations/letters/Q.json",
+      "duration_ms": 1500,
+      "difficulty": "hard",
+      "description": "Like G but pointing down"
+    },
+    "R": {
+      "path": "assets/animations/letters/R.json",
+      "duration_ms": 1500,
+      "difficulty": "medium",
+      "description": "Index and middle crossed"
+    },
+    "S": {
+      "path": "assets/animations/letters/S.json",
+      "duration_ms": 1500,
+      "difficulty": "easy",
+      "description": "Fist with thumb across fingers"
+    },
+    "T": {
+      "path": "assets/animations/letters/T.json",
+      "duration_ms": 1500,
+      "difficulty": "medium",
+      "description": "Thumb between index and middle"
+    },
+    "U": {
+      "path": "assets/animations/letters/U.json",
+      "duration_ms": 1500,
+      "difficulty": "easy",
+      "description": "Index and middle fingers up together"
+    },
+    "V": {
+      "path": "assets/animations/letters/V.json",
+      "duration_ms": 1500,
+      "difficulty": "easy",
+      "description": "Index and middle fingers up apart"
+    },
+    "W": {
+      "path": "assets/animations/letters/W.json",
+      "duration_ms": 1500,
+      "difficulty": "medium",
+      "description": "Three fingers up"
+    },
+    "X": {
+      "path": "assets/animations/letters/X.json",
+      "duration_ms": 1500,
+      "difficulty": "medium",
+      "description": "Index finger bent like hook"
+    },
+    "Y": {
+      "path": "assets/animations/letters/Y.json",
+      "duration_ms": 1500,
+      "difficulty": "easy",
+      "description": "Thumb and pinky out"
+    },
+    "Z": {
+      "path": "assets/animations/letters/Z.json",
+      "duration_ms": 1800,
+      "difficulty": "medium",
+      "description": "Index finger draws Z shape"
+    },
+    "0": {
+      "path": "assets/animations/letters/0.json",
+      "duration_ms": 1500,
+      "difficulty": "easy",
+      "description": "Same as O"
+    },
+    "1": {
+      "path": "assets/animations/letters/1.json",
+      "duration_ms": 1500,
+      "difficulty": "easy",
+      "description": "Index finger up"
+    },
+    "2": {
+      "path": "assets/animations/letters/2.json",
+      "duration_ms": 1500,
+      "difficulty": "easy",
+      "description": "Same as V"
+    },
+    "3": {
+      "path": "assets/animations/letters/3.json",
+      "duration_ms": 1500,
+      "difficulty": "easy",
+      "description": "Same as W"
+    },
+    "4": {
+      "path": "assets/animations/letters/4.json",
+      "duration_ms": 1500,
+      "difficulty": "easy",
+      "description": "Four fingers up"
+    },
+    "5": {
+      "path": "assets/animations/letters/5.json",
+      "duration_ms": 1500,
+      "difficulty": "easy",
+      "description": "All five fingers spread"
+    },
+    "6": {
+      "path": "assets/animations/letters/6.json",
+      "duration_ms": 1500,
+      "difficulty": "medium",
+      "description": "Thumb touches pinky, three fingers up"
+    },
+    "7": {
+      "path": "assets/animations/letters/7.json",
+      "duration_ms": 1500,
+      "difficulty": "medium",
+      "description": "Thumb touches ring finger"
+    },
+    "8": {
+      "path": "assets/animations/letters/8.json",
+      "duration_ms": 1500,
+      "difficulty": "medium",
+      "description": "Thumb touches middle finger"
+    },
+    "9": {
+      "path": "assets/animations/letters/9.json",
+      "duration_ms": 1500,
+      "difficulty": "medium",
+      "description": "Thumb touches index finger"
+    }
+  }
+}

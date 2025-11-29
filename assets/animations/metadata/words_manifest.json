@@ -1,0 +1,378 @@
+{
+  "version": "1.0.0",
+  "total_animations": 50,
+  "format": "lottie",
+  "description": "Common ASL word animations for demo purposes",
+  "categories": {
+    "common": {
+      "count": 20,
+      "animations": {
+        "hello": {
+          "path": "assets/animations/words/common/hello.json",
+          "duration_ms": 2000,
+          "difficulty": "easy",
+          "description": "Hand moves from forehead outward",
+          "alternatives": ["hi", "greetings"]
+        },
+        "thank": {
+          "path": "assets/animations/words/common/thank.json",
+          "duration_ms": 1800,
+          "difficulty": "easy",
+          "description": "Hand moves from chin forward",
+          "alternatives": ["thanks", "thank you"]
+        },
+        "please": {
+          "path": "assets/animations/words/common/please.json",
+          "duration_ms": 1800,
+          "difficulty": "easy",
+          "description": "Hand circles on chest",
+          "alternatives": []
+        },
+        "sorry": {
+          "path": "assets/animations/words/common/sorry.json",
+          "duration_ms": 1800,
+          "difficulty": "easy",
+          "description": "Fist circles on chest",
+          "alternatives": ["apologize"]
+        },
+        "yes": {
+          "path": "assets/animations/words/common/yes.json",
+          "duration_ms": 1500,
+          "difficulty": "easy",
+          "description": "Fist nods like head",
+          "alternatives": []
+        },
+        "no": {
+          "path": "assets/animations/words/common/no.json",
+          "duration_ms": 1500,
+          "difficulty": "easy",
+          "description": "Index and middle snap shut",
+          "alternatives": []
+        },
+        "help": {
+          "path": "assets/animations/words/common/help.json",
+          "duration_ms": 1800,
+          "difficulty": "easy",
+          "description": "Fist on flat palm, lift together",
+          "alternatives": ["assist"]
+        },
+        "stop": {
+          "path": "assets/animations/words/common/stop.json",
+          "duration_ms": 1500,
+          "difficulty": "easy",
+          "description": "Hand chops down on palm",
+          "alternatives": ["halt"]
+        },
+        "go": {
+          "path": "assets/animations/words/common/go.json",
+          "duration_ms": 1500,
+          "difficulty": "easy",
+          "description": "Index fingers point and move forward",
+          "alternatives": []
+        },
+        "come": {
+          "path": "assets/animations/words/common/come.json",
+          "duration_ms": 1500,
+          "difficulty": "easy",
+          "description": "Index fingers beckon toward body",
+          "alternatives": []
+        },
+        "wait": {
+          "path": "assets/animations/words/common/wait.json",
+          "duration_ms": 1800,
+          "difficulty": "easy",
+          "description": "Fingers wiggle in front",
+          "alternatives": []
+        },
+        "understand": {
+          "path": "assets/animations/words/common/understand.json",
+          "duration_ms": 1800,
+          "difficulty": "medium",
+          "description": "Index finger flicks up at forehead",
+          "alternatives": ["know", "get it"]
+        },
+        "good": {
+          "path": "assets/animations/words/common/good.json",
+          "duration_ms": 1800,
+          "difficulty": "easy",
+          "description": "Hand moves from chin down to palm",
+          "alternatives": ["well"]
+        },
+        "bad": {
+          "path": "assets/animations/words/common/bad.json",
+          "duration_ms": 1800,
+          "difficulty": "easy",
+          "description": "Hand moves from chin and flips down",
+          "alternatives": []
+        },
+        "happy": {
+          "path": "assets/animations/words/common/happy.json",
+          "duration_ms": 2000,
+          "difficulty": "easy",
+          "description": "Hand brushes up chest twice",
+          "alternatives": ["glad"]
+        },
+        "sad": {
+          "path": "assets/animations/words/common/sad.json",
+          "duration_ms": 2000,
+          "difficulty": "easy",
+          "description": "Hands move down face",
+          "alternatives": []
+        },
+        "love": {
+          "path": "assets/animations/words/common/love.json",
+          "duration_ms": 1800,
+          "difficulty": "easy",
+          "description": "Fists cross over heart",
+          "alternatives": []
+        },
+        "like": {
+          "path": "assets/animations/words/common/like.json",
+          "duration_ms": 1800,
+          "difficulty": "medium",
+          "description": "Thumb and middle pull from chest",
+          "alternatives": []
+        },
+        "want": {
+          "path": "assets/animations/words/common/want.json",
+          "duration_ms": 1800,
+          "difficulty": "easy",
+          "description": "Clawed hands pull toward body",
+          "alternatives": ["desire"]
+        },
+        "need": {
+          "path": "assets/animations/words/common/need.json",
+          "duration_ms": 1800,
+          "difficulty": "medium",
+          "description": "Index finger bends down repeatedly",
+          "alternatives": ["must", "require"]
+        }
+      }
+    },
+    "questions": {
+      "count": 10,
+      "animations": {
+        "what": {
+          "path": "assets/animations/words/questions/what.json",
+          "duration_ms": 1500,
+          "difficulty": "easy",
+          "description": "Index fingers wiggle side to side",
+          "alternatives": []
+        },
+        "where": {
+          "path": "assets/animations/words/questions/where.json",
+          "duration_ms": 1500,
+          "difficulty": "easy",
+          "description": "Index finger waves side to side",
+          "alternatives": []
+        },
+        "when": {
+          "path": "assets/animations/words/questions/when.json",
+          "duration_ms": 1800,
+          "difficulty": "medium",
+          "description": "Index finger circles and touches",
+          "alternatives": []
+        },
+        "why": {
+          "path": "assets/animations/words/questions/why.json",
+          "duration_ms": 1800,
+          "difficulty": "medium",
+          "description": "Middle finger touches forehead, hand moves out",
+          "alternatives": []
+        },
+        "how": {
+          "path": "assets/animations/words/questions/how.json",
+          "duration_ms": 1800,
+          "difficulty": "medium",
+          "description": "Knuckles together, hands roll forward",
+          "alternatives": []
+        },
+        "who": {
+          "path": "assets/animations/words/questions/who.json",
+          "duration_ms": 1800,
+          "difficulty": "medium",
+          "description": "Index finger circles around lips",
+          "alternatives": []
+        },
+        "which": {
+          "path": "assets/animations/words/questions/which.json",
+          "duration_ms": 1800,
+          "difficulty": "medium",
+          "description": "A-hands alternate up and down",
+          "alternatives": []
+        },
+        "can": {
+          "path": "assets/animations/words/questions/can.json",
+          "duration_ms": 1500,
+          "difficulty": "easy",
+          "description": "Fists move down together",
+          "alternatives": ["able"]
+        },
+        "will": {
+          "path": "assets/animations/words/questions/will.json",
+          "duration_ms": 1500,
+          "difficulty": "easy",
+          "description": "Flat hand moves forward from cheek",
+          "alternatives": []
+        },
+        "do": {
+          "path": "assets/animations/words/questions/do.json",
+          "duration_ms": 1500,
+          "difficulty": "easy",
+          "description": "C-hands move side to side",
+          "alternatives": ["does", "did"]
+        }
+      }
+    },
+    "family": {
+      "count": 10,
+      "animations": {
+        "mother": {
+          "path": "assets/animations/words/family/mother.json",
+          "duration_ms": 1800,
+          "difficulty": "easy",
+          "description": "Thumb touches chin",
+          "alternatives": ["mom"]
+        },
+        "father": {
+          "path": "assets/animations/words/family/father.json",
+          "duration_ms": 1800,
+          "difficulty": "easy",
+          "description": "Thumb touches forehead",
+          "alternatives": ["dad"]
+        },
+        "sister": {
+          "path": "assets/animations/words/family/sister.json",
+          "duration_ms": 2000,
+          "difficulty": "medium",
+          "description": "L-hand at chin, then index fingers together",
+          "alternatives": []
+        },
+        "brother": {
+          "path": "assets/animations/words/family/brother.json",
+          "duration_ms": 2000,
+          "difficulty": "medium",
+          "description": "L-hand at forehead, then index fingers together",
+          "alternatives": []
+        },
+        "family": {
+          "path": "assets/animations/words/family/family.json",
+          "duration_ms": 2000,
+          "difficulty": "medium",
+          "description": "F-hands circle and touch",
+          "alternatives": []
+        },
+        "friend": {
+          "path": "assets/animations/words/family/friend.json",
+          "duration_ms": 2000,
+          "difficulty": "medium",
+          "description": "Index fingers hook together twice",
+          "alternatives": []
+        },
+        "baby": {
+          "path": "assets/animations/words/family/baby.json",
+          "duration_ms": 2000,
+          "difficulty": "easy",
+          "description": "Arms rock like holding baby",
+          "alternatives": []
+        },
+        "child": {
+          "path": "assets/animations/words/family/child.json",
+          "duration_ms": 1500,
+          "difficulty": "easy",
+          "description": "Hand pats downward",
+          "alternatives": ["kid"]
+        },
+        "man": {
+          "path": "assets/animations/words/family/man.json",
+          "duration_ms": 1800,
+          "difficulty": "easy",
+          "description": "Thumb from forehead to chest",
+          "alternatives": []
+        },
+        "woman": {
+          "path": "assets/animations/words/family/woman.json",
+          "duration_ms": 1800,
+          "difficulty": "easy",
+          "description": "Thumb from chin to chest",
+          "alternatives": []
+        }
+      }
+    },
+    "emergency": {
+      "count": 10,
+      "animations": {
+        "emergency": {
+          "path": "assets/animations/words/emergency/emergency.json",
+          "duration_ms": 2000,
+          "difficulty": "medium",
+          "description": "E-hand shakes urgently",
+          "alternatives": []
+        },
+        "danger": {
+          "path": "assets/animations/words/emergency/danger.json",
+          "duration_ms": 2000,
+          "difficulty": "medium",
+          "description": "Fist moves up arm repeatedly",
+          "alternatives": []
+        },
+        "safe": {
+          "path": "assets/animations/words/emergency/safe.json",
+          "duration_ms": 1800,
+          "difficulty": "medium",
+          "description": "S-hands cross at wrists",
+          "alternatives": []
+        },
+        "police": {
+          "path": "assets/animations/words/emergency/police.json",
+          "duration_ms": 1800,
+          "difficulty": "easy",
+          "description": "C-hand taps shoulder (badge)",
+          "alternatives": []
+        },
+        "ambulance": {
+          "path": "assets/animations/words/emergency/ambulance.json",
+          "duration_ms": 2000,
+          "difficulty": "hard",
+          "description": "A-hand with cross motion",
+          "alternatives": []
+        },
+        "fire": {
+          "path": "assets/animations/words/emergency/fire.json",
+          "duration_ms": 2000,
+          "difficulty": "easy",
+          "description": "Hands wiggle upward (flames)",
+          "alternatives": []
+        },
+        "hospital": {
+          "path": "assets/animations/words/emergency/hospital.json",
+          "duration_ms": 2000,
+          "difficulty": "medium",
+          "description": "H-hand draws cross on arm",
+          "alternatives": []
+        },
+        "doctor": {
+          "path": "assets/animations/words/emergency/doctor.json",
+          "duration_ms": 1800,
+          "difficulty": "medium",
+          "description": "D-hand taps wrist (pulse)",
+          "alternatives": []
+        },
+        "medicine": {
+          "path": "assets/animations/words/emergency/medicine.json",
+          "duration_ms": 1800,
+          "difficulty": "medium",
+          "description": "Middle finger circles in palm",
+          "alternatives": []
+        },
+        "pain": {
+          "path": "assets/animations/words/emergency/pain.json",
+          "duration_ms": 1800,
+          "difficulty": "easy",
+          "description": "Index fingers twist together",
+          "alternatives": ["hurt"]
+        }
+      }
+    }
+  }
+}
