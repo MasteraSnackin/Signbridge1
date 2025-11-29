@@ -10,8 +10,8 @@ dependencies:
   flutter:
     sdk: flutter
   
-  # Cactus SDK for on-device AI
-  cactus: ^0.1.0
+  # Cactus SDK for on-device AI (using mock implementation)
+  # cactus: ^0.1.0  # Not publicly available - using mock
   
   # Camera
   camera: ^0.10.5+9
