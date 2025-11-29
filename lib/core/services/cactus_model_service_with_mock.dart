@@ -16,7 +16,7 @@ class CactusModelServiceWithMock {
   static final instance = CactusModelServiceWithMock._();
   CactusModelServiceWithMock._();
 
-  final _logger = Logger.instance;
+  static const String _tag = 'CactusModelServiceWithMock';
   
   // Toggle this flag to switch between mock and real SDK
   static const bool useMockSDK = true; // Set to false for production
@@ -34,23 +34,23 @@ class CactusModelServiceWithMock {
   /// Initialize models (mock or real based on flag)
   Future<void> initialize() async {
     if (_isInitialized) {
-      _logger.info('Models already initialized');
+      Logger.info('Models already initialized', _tag);
       return;
     }
 
     try {
       if (useMockSDK) {
-        _logger.info('🎭 Using Mock Cactus SDK for demo/testing');
+        Logger.info('🎭 Using Mock Cactus SDK for demo/testing', _tag);
         await _initializeMockSDK();
       } else {
-        _logger.info('🚀 Using Real Cactus SDK');
+        Logger.info('🚀 Using Real Cactus SDK', _tag);
         await CactusModelService.instance.initialize();
       }
       
       _isInitialized = true;
-      _logger.info('Models initialized successfully');
+      Logger.info('Models initialized successfully', _tag);
     } catch (e, stackTrace) {
-      _logger.error('Failed to initialize models', e, stackTrace);
+      Logger.error(e, stackTrace, _tag);
       rethrow;
     }
   }
@@ -131,6 +131,6 @@ class CactusModelServiceWithMock {
       CactusModelService.instance.dispose();
     }
     _isInitialized = false;
-    _logger.info('Models disposed');
+    Logger.info('Models disposed', _tag);
   }
 }

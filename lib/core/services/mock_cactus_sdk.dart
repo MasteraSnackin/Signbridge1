@@ -21,21 +21,21 @@ import 'package:signbridge/core/utils/logger.dart';
 
 /// Mock Vision Model (simulates LFM2-VL-450M)
 class MockCactusLM {
-  final _logger = Logger.instance;
+  static const String _tag = 'MockCactusLM';
   bool _isInitialized = false;
   final _random = math.Random();
 
   Future<void> downloadModel({required String model}) async {
-    _logger.info('Mock: Downloading model $model...');
+    Logger.info('Mock: Downloading model $model...', _tag);
     await Future.delayed(Duration(milliseconds: 500));
-    _logger.info('Mock: Model $model downloaded');
+    Logger.info('Mock: Model $model downloaded', _tag);
   }
 
   Future<void> initializeModel([MockCactusInitParams? params]) async {
-    _logger.info('Mock: Initializing model...');
+    Logger.info('Mock: Initializing model...', _tag);
     await Future.delayed(Duration(milliseconds: 300));
     _isInitialized = true;
-    _logger.info('Mock: Model initialized');
+    Logger.info('Mock: Model initialized', _tag);
   }
 
   Future<MockCompletionResult> generateCompletion({
@@ -98,13 +98,13 @@ class MockCactusLM {
 
   Future<void> dispose() async {
     _isInitialized = false;
-    _logger.info('Mock: Model disposed');
+    Logger.info('Mock: Model disposed', _tag);
   }
 }
 
 /// Mock Speech-to-Text Model (simulates Whisper-Tiny)
 class MockCactusSTT {
-  final _logger = Logger.instance;
+  static const String _tag = 'MockCactusSTT';
   bool _isInitialized = false;
   bool _isRecording = false;
   final _random = math.Random();
@@ -124,16 +124,16 @@ class MockCactusSTT {
   ];
 
   Future<void> download({required String model}) async {
-    _logger.info('Mock: Downloading STT model $model...');
+    Logger.info('Mock: Downloading STT model $model...', _tag);
     await Future.delayed(Duration(milliseconds: 500));
-    _logger.info('Mock: STT model $model downloaded');
+    Logger.info('Mock: STT model $model downloaded', _tag);
   }
 
   Future<void> init({required String model, String language = 'en'}) async {
-    _logger.info('Mock: Initializing STT model...');
+    Logger.info('Mock: Initializing STT model...', _tag);
     await Future.delayed(Duration(milliseconds: 300));
     _isInitialized = true;
-    _logger.info('Mock: STT model initialized');
+    Logger.info('Mock: STT model initialized', _tag);
   }
 
   Future<void> startRecording() async {
@@ -141,7 +141,7 @@ class MockCactusSTT {
       throw StateError('STT model not initialized');
     }
     _isRecording = true;
-    _logger.info('Mock: Started recording');
+    Logger.info('Mock: Started recording', _tag);
   }
 
   Future<MockTranscriptionResult?> stopRecording() async {
@@ -157,7 +157,7 @@ class MockCactusSTT {
     // Return random sample phrase
     final text = _samplePhrases[_random.nextInt(_samplePhrases.length)];
     
-    _logger.info('Mock: Transcribed: "$text"');
+    Logger.info('Mock: Transcribed: "$text"', _tag);
 
     return MockTranscriptionResult(
       text: text,
@@ -179,7 +179,7 @@ class MockCactusSTT {
   Future<void> dispose() async {
     _isInitialized = false;
     _isRecording = false;
-    _logger.info('Mock: STT model disposed');
+    Logger.info('Mock: STT model disposed', _tag);
   }
 }
 
@@ -268,11 +268,11 @@ class MockCactusModelService {
   MockCactusLM? textModel;
   MockCactusSTT? speechModel;
 
-  final _logger = Logger.instance;
+  static const String _tag = 'MockCactusModelService';
 
   Future<void> initialize() async {
     try {
-      _logger.info('Mock: Initializing Cactus SDK models...');
+      Logger.info('Mock: Initializing Cactus SDK models...', _tag);
 
       // Initialize Vision Model
       visionModel = MockCactusLM();
@@ -292,9 +292,9 @@ class MockCactusModelService {
       await speechModel!.download(model: "whisper-tiny");
       await speechModel!.init(model: "whisper-tiny");
 
-      _logger.info('Mock: All Cactus models initialized successfully');
+      Logger.info('Mock: All Cactus models initialized successfully', _tag);
     } catch (e, stackTrace) {
-      _logger.error('Mock: Failed to initialize Cactus models', e, stackTrace);
+      Logger.error(e, stackTrace, _tag);
       rethrow;
     }
   }
@@ -315,6 +315,6 @@ class MockCactusModelService {
     await visionModel?.dispose();
     await textModel?.dispose();
     await speechModel?.dispose();
-    _logger.info('Mock: All models disposed');
+    Logger.info('Mock: All models disposed', _tag);
   }
 }
