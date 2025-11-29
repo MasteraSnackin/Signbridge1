@@ -169,7 +169,7 @@ class SignRecognitionService extends ChangeNotifier {
     } catch (e, stackTrace) {
       _logger.error('Failed to initialize sign recognition service', e, stackTrace);
       _setState(SignRecognitionState.error);
-      AppErrorHandler.handleRecognitionError(e as Exception);
+      await ErrorHandler.handleError(e, ErrorContext.signRecognition, stackTrace: stackTrace);
       rethrow;
     }
   }
@@ -191,7 +191,7 @@ class SignRecognitionService extends ChangeNotifier {
         _processFrame,
         onError: (error, stackTrace) {
           _logger.error('Error in frame stream', error, stackTrace);
-          AppErrorHandler.handleRecognitionError(error as Exception);
+          ErrorHandler.handleError(error, ErrorContext.signRecognition, stackTrace: stackTrace);
         },
       );
       
@@ -199,7 +199,7 @@ class SignRecognitionService extends ChangeNotifier {
       _logger.info('Sign recognition started');
     } catch (e, stackTrace) {
       _logger.error('Failed to start recognition', e, stackTrace);
-      AppErrorHandler.handleRecognitionError(e as Exception);
+      await ErrorHandler.handleError(e, ErrorContext.signRecognition, stackTrace: stackTrace);
       rethrow;
     }
   }
@@ -302,6 +302,7 @@ class SignRecognitionService extends ChangeNotifier {
           confidence: classificationResult.confidence,
           timestamp: DateTime.now(),
           landmarks: detectionResult.landmarks!,
+          processingTime: stopwatch.elapsed,
         );
         
         // Step 3: Convert to text
